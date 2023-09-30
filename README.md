@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <!--
 *** Thanks for checking out our project. 
-*** This README file is created by Pham Minh Tuan, member of the project.
+*** This project  is created by group 1.
 *** Don't forget to give the project a star!
 -->
 
@@ -10,23 +10,24 @@
 <br />
 <div align="center">
   
-<img src="https://imgur.com/woGDuHI" width="256" height="256">    
+<img src="https://i.imgur.com/woGDuHI.jpeg" width="256" height="256">  
 
   </a>
 
-<h3 align="center">Pet Store Management Software</h3>
+<h3 align="center">Skin Cancer Classification
+ </h3>
 
   <p align="center">
-    An OOP – Java project of group 5
+    A Deep Learning project of group 1
     <br />
-    <a href="https://github.com/tuanpka/PetStore-OOP"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/luat2003/Skin-Cancer-Classification"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/tuanpka/PetStore-OOP">View Demo</a>
+    <a href="https://github.com/luat2003/Skin-Cancer-Classification">View Demo</a>
     ·
-    <a href="https://github.com/tuanpka/PetStore-OOP/issues">Report Bug</a>
+    <a href="https://github.com/luat2003/Skin-Cancer-Classification/issues">Report Bug</a>
     ·
-    <a href="https://github.com/tuanpka/PetStore-OOP/issues">Request Feature</a>
+    <a href="https://github.com/luat2003/Skin-Cancer-Classification/issues">Request Feature</a>
   </p>
 </div>
 
@@ -44,14 +45,13 @@
     </li>
     <li><a href="#key-features">Key Features</a></li> 
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started"></a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites"></a></li>
+        <li><a href="#installation"></a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#author">Author</a></li>
@@ -63,89 +63,54 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Imgur](https://i.imgur.com/f1Khu9r.jpg)  
+![Imgur](https://i.imgur.com/ElQc7ly.png)  
 
-At the present time, there is a noticeable absence of optimized software solutions tailored for pet store management. Recognizing this gap, our team has conceptualized and developed the "Pet Store Management" project as a comprehensive solution. This application is designed to address the specific needs of pet store management, ensuring efficient operations and enhancing customer experiences.
+Skin cancer is one of the most prevalent types of cancer. Early diagnosis of skin cancer is crucial for successful treatment.
+
+This project aims to classify skin lesions using images from the HAM10000 ("Human Against Machine with 10000 training images") dataset. The HAM10000 dataset consists of 10015 dermatoscopic images which are labelled as one of the following conditions:
+
+* Melanoma
+* Melanocytic nevus
+* Basal cell carcinoma
+* Actinic keratosis
+* Benign keratosis
+* Dermatofibroma
+* Vascular lesion
+
+A convolutional neural network (CNN) model is built using Python and standard libraries to classify skin lesions into one of the above 7 conditions. The model is trained on the HAM10000 dataset.
+
+The goal is to explore deep learning techniques to build an automated system capable of classifying skin cancer from images. Such a system can help dermatologists speed up the diagnostic process and improve early detection of malignant lesions.
+
+This project demonstrates how deep learning can be applied in the medical field to build decision support systems and improve healthcare outcomes. Our model and code is open-sourced on Github to encourage collaboration between data scientists and healthcare professionals.
+
 
 
 
 
 ### Technology Stack
 
-*  ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)  
-* ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)  
+*  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+*  ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
 
 
 <!-- Key Features -->
 ## Key Features
-* Pet Inventory Management: Effectively manage the diverse range of pets available in the store, keeping track of their information and status.
 
-* Business Management: Enable the store owner to efficiently oversee the business by managing appointments, sales, inventory, and customer interactions.
-
-* Sales Log Tracking: Keep a detailed record of all sales transactions, enabling easy access to historical sales data.
-
-* Product Inventory Management: Maintain an organized inventory of products specifically tailored for pets, ensuring optimal stock levels and availability.
-
-* Customer Relationship Management: Manage customer profiles, purchase history, and appointment records to foster personalized services and strengthen customer relationships.
-
-* Data Analytics and Reporting: Generate insightful reports and statistics on various aspects of the business, aiding in informed decision-making.
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-
+* Image classification model built using Convolutional Neural Networks (CNN) with Python
+* Achieves over 80% accuracy in classifying 7 types of skin conditions
+* Model outputs probability scores for each predicted skin condition type
+* False positives/negatives analysis to identify areas for improvement
+* Modular Python code for easy customization and extension
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-* Add Pets and Products: Effortlessly manage the store's pets and products, ensuring accurate tracking and availability.   
-* Business Management: Utilize the system to manage appointments, oversee sales, and handle inventory efficiently.   
-* Sales Tracking: Keep a record of all sales transactions, enabling easy access to sales history.  
-* Customer Management: Manage customer relationships by maintaining detailed profiles and history.  
-* Data Analytics: Leverage the provided reports and statistics to gain insights into the store's performance.   
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
+* Upload Images: Upload skin images to the application for classification into one of 7 conditions.
+* AI Prediction: The deep learning model will analyze the images and output predicted skin conditions along with probability scores.
+* Performance Tracking: Monitor overall model accuracy, precision, recall to identify areas for improvement.
+* Misclassification Analysis: Review false positives and false negatives to refine the model.
 
 
 
@@ -176,15 +141,16 @@ Distributed under the MIT License. See  [![License: MIT](https://img.shields.io/
 
 <!-- AUTHOR -->
 ## Author
-This project is developed by Group 5.  
+This project is developed by Group 1.  
 
 Contact:
+
+* Le Ba Luat - 21010554@st.phenikaa-uni.edu.vn (Team leader)
 * Pham Minh Tuan – 21012400@st.phenikaa-uni.edu.vn
-* Nguyen Trung Duc - 21012397@st.phenikaa-uni.edu.vn
-* Nguyen Trong Khanh - 21012805@st.phenikaa-uni.edu.vn
-* Doan Quang Huy - 21013354@st.phenikaa-uni.edu.vn
+* Dao Quang Hiep - 21013089@st.phenikaa-uni.edu.vn 
+
 
 Project Link:
-https://github.com/tuanpka/PetStore-OOP
+https://github.com/luat2003/Skin-Cancer-Classification
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
